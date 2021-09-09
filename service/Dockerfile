@@ -1,5 +1,9 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build-env
 
+RUN apt-get update && \
+    apt-get install -y \
+    vim
+
 COPY /src/ToDoApi/ToDoApi.csproj /src/ToDoApi/ToDoApi.csproj
 RUN dotnet restore /src/ToDoApi/ToDoApi.csproj
 
