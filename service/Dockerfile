@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build-env
 
 COPY /src/ToDoApi/ToDoApi.csproj /src/ToDoApi/ToDoApi.csproj
-RUN dotnet restore ./src/ToDoApi/ToDoApi.csproj
+RUN dotnet restore /src/ToDoApi/ToDoApi.csproj
 
 COPY src src
 WORKDIR /src

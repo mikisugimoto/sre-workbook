@@ -4,13 +4,14 @@ services:
   wb-app:
     build:
       context: .
-      # target: build-env
-    # command: ["dotnet", "watch", "--project", "./src", "--urls", "http://0.0.0.0:80"]
+      target: build-env
+    command: ["dotnet", "watch", "--project", "/src/ToDoApi", "run", "--urls", "http://0.0.0.0:80"]
+    #command: ["dotnet", "run", "--project", "/src/ToDoApi"]
     container_name: dotnet
     env_file: .env.development
     ports:
       - "8080:80"
-    # stdin_open: true
-    # tty: true
-    # volumes:
-    #   - ./src:/src
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./src:/src
