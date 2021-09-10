@@ -6,7 +6,6 @@ services:
       context: .
       target: build-env
     command: ["dotnet", "watch", "--project", "/src/ToDoApi", "run", "--urls", "http://0.0.0.0:80"]
-    #command: ["dotnet", "run", "--project", "/src/ToDoApi"]
     container_name: dotnet
     env_file: .env.development
     ports:
