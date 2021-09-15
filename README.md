@@ -8,7 +8,7 @@ Each module is a small task representing a skill or technology
 
 ### Containerize an Application
 
-**Objective**: Run a .NET API application in Docker
+**Objective**: Run a .NET API in Docker
 
 **Definition of Done**:
 - [ ] Create a Dockerfile which copies in the application files, compiles the application, and runs on container start
@@ -19,6 +19,9 @@ Each module is a small task representing a skill or technology
 - [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
 - [Dockerfile best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 - [Microsoft .NET Docker Hub repository](https://hub.docker.com/_/microsoft-dotnet/)
+
+**Hints**:
+* The HTTP port is `80`, the HTTPS port is `443`
 
 ### Jenkins Server
 

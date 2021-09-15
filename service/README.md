@@ -1,4 +1,4 @@
-# REST API application
+# REST API
 
 ## Setup
 
