@@ -12,8 +12,7 @@ Each module is a small task representing a skill or technology
 
 **Definition of Done**:
 - [ ] Create a Dockerfile which copies in the application files, compiles the application, and runs on container start
-- [ ] Use a multi-stage build to reduce the size of the Docker image
-- [ ] Write a `README.md` so users know how to build and run the Docker container locally and hit the endpoints
+- [ ] Update the `./service/README.md` so users know how to build and run the Docker container locally and hit the endpoints
 
 **Resources**:
 - [Docker architecture](https://docs.docker.com/get-started/overview/#docker-architecture)
